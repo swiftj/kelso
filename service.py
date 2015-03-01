@@ -50,7 +50,6 @@ class Category(Resource):
         """ If a valid category name is requested, this will return the current count associated with
         that category which reflects how many times that category has been encountered so far by this service.
         """
-#        args = self.reqparse.parse_args()
         if name is not None:
             try:
                 return {'count': category_db[escape(name.upper())]}
