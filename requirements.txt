@@ -1,5 +1,6 @@
 aniso8601==0.92
 Flask==0.10.1
+Flask-HTTPAuth==2.3.0
 Flask-RESTful==0.3.2
 gunicorn==19.2.1
 itsdangerous==0.24
