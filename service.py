@@ -146,7 +146,7 @@ class Cleaner(Resource):
             if isinstance(category, list) and len(category) >= 2:
                 results.add(category[0], category[1])
 
-        return results.__dict__
+        return jsonify(results.__dict__)
 
 
 # Run this Flask application as a RESTful web service

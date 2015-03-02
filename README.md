@@ -212,10 +212,31 @@ $ curl -k -u <username>:<password> -X POST -H 'Content-Type: application/json' \
                         ["animal", "Cat"], ["ANIMAL", "Bird", "extra"]]}' \
     https://floating-waters-7589.herokuapp.com/kelso/api/v1/cleaner
 {
-  "categories": [["PERSON", "John"], ["ANIMAL", "Dog"], ["ANIMAL", "Cat"], ["ANIMAL", "Bird"]], 
-  "counts": {"ANIMAL": 3, "PERSON": 1}
+  "categories": [
+    [
+      "PERSON",
+      "John"
+    ],
+    [
+      "ANIMAL",
+      "Dog"
+    ],
+    [
+      "ANIMAL",
+      "Cat"
+    ],
+    [
+      "ANIMAL",
+      "Bird"
+    ]
+  ],
+  "counts": {
+    "PERSON": 1,
+    "ANIMAL": 3
+  }  
 }
 ```
 
-Notice the counts property correctly reflects the valid counts of categories found in the original submission.
+Notice the counts property correctly reflects the valid counts of categories found in the original submission and the 
+order of the categories has been preserved.
 
